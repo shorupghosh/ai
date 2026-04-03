@@ -1,0 +1,2136 @@
+﻿
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mC:/Users/shoru/Project/Web-App/personal_ai_assistanta[39m
+
+node.exe : [90mstderr[2m 
+| 
+server/integrations.test.ts
+At C:\Program 
+Files\nodejs\npx.ps1:29 
+char:3
++   & $NODE_EXE 
+$NPX_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+    + CategoryInfo         
+     : NotSpecified: ([9  
+  0mstderr[2m...rations   
+ .test.ts:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+[22m[39m[Security] 
+CRITICAL: JWT_SECRET is 
+not set! Session tokens 
+will be insecure.
+[Database] DATABASE_URL is 
+not set. Database features 
+will be unavailable.
+
+[90mstderr[2m | 
+server/daily-plan.test.ts
+[22m[39m[Security] 
+CRITICAL: JWT_SECRET is 
+not set! Session tokens 
+will be insecure.
+[Database] DATABASE_URL is 
+not set. Database features 
+will be unavailable.
+
+[90mstderr[2m | 
+server/features.test.ts
+[22m[39m[Security] 
+CRITICAL: JWT_SECRET is 
+not set! Session tokens 
+will be insecure.
+[Database] DATABASE_URL is 
+not set. Database features 
+will be unavailable.
+
+[90mstderr[2m | 
+server/insights.test.ts
+[22m[39m[Security] 
+CRITICAL: JWT_SECRET is 
+not set! Session tokens 
+will be insecure.
+[Database] DATABASE_URL is 
+not set. Database features 
+will be unavailable.
+
+[90mstderr[2m | 
+server/auth.logout.test.ts
+[22m[39m[Security] 
+CRITICAL: JWT_SECRET is 
+not set! Session tokens 
+will be insecure.
+[Database] DATABASE_URL is 
+not set. Database features 
+will be unavailable.
+
+[90mstderr[2m | 
+server/ai.test.ts
+[22m[39m[Security] 
+CRITICAL: JWT_SECRET is 
+not set! Session tokens 
+will be insecure.
+[Database] DATABASE_URL is 
+not set. Database features 
+will be unavailable.
+
+[90mstderr[2m | server/tr
+iggerDetection.test.ts
+[22m[39m[Security] 
+CRITICAL: JWT_SECRET is 
+not set! Session tokens 
+will be insecure.
+[Database] DATABASE_URL is 
+not set. Database features 
+will be unavailable.
+
+[90mstderr[2m | server/tr
+iggerDetection.test.ts[2m 
+> [22m[2mTrigger 
+Detection System[2m > 
+[22m[2mshould generate 
+coping strategies for high 
+urge
+[22m[39mError generating 
+coping strategies: Error: 
+OPENAI_API_KEY is not 
+configured
+    at assertApiKey [90m(C
+:\Users\shoru\Project\Web-A
+pp\personal_ai_assistanta\
+[39mserver\_core\llm.ts:219
+:11[90m)[39m
+    at Module.invokeLLM [9
+0m(C:\Users\shoru\Project\W
+eb-App\personal_ai_assistan
+ta\[39mserver\_core\llm.ts
+:269:3[90m)[39m
+    at Module.generateCopin
+gStrategies [90m(C:\Users\
+shoru\Project\Web-App\perso
+nal_ai_assistanta\[39mserv
+er\triggerDetection.ts:128:
+28[90m)[39m
+    at __vite_ssr_import_0_
+_.it.timeout [90m(C:\Users
+\shoru\Project\Web-App\pers
+onal_ai_assistanta\[39mser
+ver\triggerDetection.test.t
+s:15:30[90m)[39m
+    at [90mfile:///C:/User
+s/shoru/Project/Web-App/per
+sonal_ai_assistanta/[39mno
+de_modules/[4m.pnpm[24m/@
+vitest+runner@2.1.9/node_mo
+dules/[4m@vitest[24m/runn
+er/dist/index.js:146:14
+    at [90mfile:///C:/User
+s/shoru/Project/Web-App/per
+sonal_ai_assistanta/[39mno
+de_modules/[4m.pnpm[24m/@
+vitest+runner@2.1.9/node_mo
+dules/[4m@vitest[24m/runn
+er/dist/index.js:533:11
+    at runWithTimeout [90m
+(file:///C:/Users/shoru/Pro
+ject/Web-App/personal_ai_as
+sistanta/[39mnode_modules/
+[4m.pnpm[24m/@vitest+runn
+er@2.1.9/node_modules/[4m@
+vitest[24m/runner/dist/ind
+ex.js:39:7[90m)[39m
+    at runTest [90m(file:/
+//C:/Users/shoru/Project/We
+b-App/personal_ai_assistant
+a/[39mnode_modules/[4m.pn
+pm[24m/@vitest+runner@2.1.
+9/node_modules/[4m@vitest
+[24m/runner/dist/index.js:1
+056:17[90m)[39m
+[90m    at 
+processTicksAndRejections (
+node:internal/process/task_
+queues:105:5)[39m
+    at runSuite [90m(file:
+///C:/Users/shoru/Project/W
+eb-App/personal_ai_assistan
+ta/[39mnode_modules/[4m.p
+npm[24m/@vitest+runner@2.1
+.9/node_modules/[4m@vitest
+[24m/runner/dist/index.js:
+1205:15[90m)[39m
+
+[90mstderr[2m | server/tr
+iggerDetection.test.ts[2m 
+> [22m[2mTrigger 
+Detection System[2m > 
+[22m[2mshould generate 
+strategies with valid 
+effectiveness rating
+[22m[39mError generating 
+coping strategies: Error: 
+OPENAI_API_KEY is not 
+configured
+    at assertApiKey [90m(C
+:\Users\shoru\Project\Web-A
+pp\personal_ai_assistanta\
+[39mserver\_core\llm.ts:219
+:11[90m)[39m
+    at Module.invokeLLM [9
+0m(C:\Users\shoru\Project\W
+eb-App\personal_ai_assistan
+ta\[39mserver\_core\llm.ts
+:269:3[90m)[39m
+    at Module.generateCopin
+gStrategies [90m(C:\Users\
+shoru\Project\Web-App\perso
+nal_ai_assistanta\[39mserv
+er\triggerDetection.ts:128:
+28[90m)[39m
+    at __vite_ssr_import_0_
+_.it.timeout [90m(C:\Users
+\shoru\Project\Web-App\pers
+onal_ai_assistanta\[39mser
+ver\triggerDetection.test.t
+s:30:30[90m)[39m
+    at [90mfile:///C:/User
+s/shoru/Project/Web-App/per
+sonal_ai_assistanta/[39mno
+de_modules/[4m.pnpm[24m/@
+vitest+runner@2.1.9/node_mo
+dules/[4m@vitest[24m/runn
+er/dist/index.js:146:14
+    at [90mfile:///C:/User
+s/shoru/Project/Web-App/per
+sonal_ai_assistanta/[39mno
+de_modules/[4m.pnpm[24m/@
+vitest+runner@2.1.9/node_mo
+dules/[4m@vitest[24m/runn
+er/dist/index.js:533:11
+    at runWithTimeout [90m
+(file:///C:/Users/shoru/Pro
+ject/Web-App/personal_ai_as
+sistanta/[39mnode_modules/
+[4m.pnpm[24m/@vitest+runn
+er@2.1.9/node_modules/[4m@
+vitest[24m/runner/dist/ind
+ex.js:39:7[90m)[39m
+    at runTest [90m(file:/
+//C:/Users/shoru/Project/We
+b-App/personal_ai_assistant
+a/[39mnode_modules/[4m.pn
+pm[24m/@vitest+runner@2.1.
+9/node_modules/[4m@vitest
+[24m/runner/dist/index.js:1
+056:17[90m)[39m
+[90m    at 
+processTicksAndRejections (
+node:internal/process/task_
+queues:105:5)[39m
+    at runSuite [90m(file:
+///C:/Users/shoru/Project/W
+eb-App/personal_ai_assistan
+ta/[39mnode_modules/[4m.p
+npm[24m/@vitest+runner@2.1
+.9/node_modules/[4m@vitest
+[24m/runner/dist/index.js:
+1205:15[90m)[39m
+
+[90mstderr[2m | server/tr
+iggerDetection.test.ts[2m 
+> [22m[2mTrigger 
+Detection System[2m > 
+[22m[2mshould generate 
+strategies for stimulant 
+urges
+[22m[39mError generating 
+coping strategies: Error: 
+OPENAI_API_KEY is not 
+configured
+    at assertApiKey [90m(C
+:\Users\shoru\Project\Web-A
+pp\personal_ai_assistanta\
+[39mserver\_core\llm.ts:219
+:11[90m)[39m
+    at Module.invokeLLM [9
+0m(C:\Users\shoru\Project\W
+eb-App\personal_ai_assistan
+ta\[39mserver\_core\llm.ts
+:269:3[90m)[39m
+    at Module.generateCopin
+gStrategies [90m(C:\Users\
+shoru\Project\Web-App\perso
+nal_ai_assistanta\[39mserv
+er\triggerDetection.ts:128:
+28[90m)[39m
+    at __vite_ssr_import_0_
+_.it.timeout [90m(C:\Users
+\shoru\Project\Web-App\pers
+onal_ai_assistanta\[39mser
+ver\triggerDetection.test.t
+s:47:30[90m)[39m
+    at [90mfile:///C:/User
+s/shoru/Project/Web-App/per
+sonal_ai_assistanta/[39mno
+de_modules/[4m.pnpm[24m/@
+vitest+runner@2.1.9/node_mo
+dules/[4m@vitest[24m/runn
+er/dist/index.js:146:14
+    at [90mfile:///C:/User
+s/shoru/Project/Web-App/per
+sonal_ai_assistanta/[39mno
+de_modules/[4m.pnpm[24m/@
+vitest+runner@2.1.9/node_mo
+dules/[4m@vitest[24m/runn
+er/dist/index.js:533:11
+    at runWithTimeout [90m
+(file:///C:/Users/shoru/Pro
+ject/Web-App/personal_ai_as
+sistanta/[39mnode_modules/
+[4m.pnpm[24m/@vitest+runn
+er@2.1.9/node_modules/[4m@
+vitest[24m/runner/dist/ind
+ex.js:39:7[90m)[39m
+    at runTest [90m(file:/
+//C:/Users/shoru/Project/We
+b-App/personal_ai_assistant
+a/[39mnode_modules/[4m.pn
+pm[24m/@vitest+runner@2.1.
+9/node_modules/[4m@vitest
+[24m/runner/dist/index.js:1
+056:17[90m)[39m
+[90m    at 
+processTicksAndRejections (
+node:internal/process/task_
+queues:105:5)[39m
+    at runSuite [90m(file:
+///C:/Users/shoru/Project/W
+eb-App/personal_ai_assistan
+ta/[39mnode_modules/[4m.p
+npm[24m/@vitest+runner@2.1
+.9/node_modules/[4m@vitest
+[24m/runner/dist/index.js:
+1205:15[90m)[39m
+
+[90mstderr[2m | server/tr
+iggerDetection.test.ts[2m 
+> [22m[2mTrigger 
+Detection System[2m > 
+[22m[2mshould generate 
+fallback strategies if LLM 
+fails
+[22m[39mError generating 
+coping strategies: Error: 
+OPENAI_API_KEY is not 
+configured
+    at assertApiKey [90m(C
+:\Users\shoru\Project\Web-A
+pp\personal_ai_assistanta\
+[39mserver\_core\llm.ts:219
+:11[90m)[39m
+    at Module.invokeLLM [9
+0m(C:\Users\shoru\Project\W
+eb-App\personal_ai_assistan
+ta\[39mserver\_core\llm.ts
+:269:3[90m)[39m
+    at Module.generateCopin
+gStrategies [90m(C:\Users\
+shoru\Project\Web-App\perso
+nal_ai_assistanta\[39mserv
+er\triggerDetection.ts:128:
+28[90m)[39m
+    at __vite_ssr_import_0_
+_.it.timeout [90m(C:\Users
+\shoru\Project\Web-App\pers
+onal_ai_assistanta\[39mser
+ver\triggerDetection.test.t
+s:79:30[90m)[39m
+    at [90mfile:///C:/User
+s/shoru/Project/Web-App/per
+sonal_ai_assistanta/[39mno
+de_modules/[4m.pnpm[24m/@
+vitest+runner@2.1.9/node_mo
+dules/[4m@vitest[24m/runn
+er/dist/index.js:146:14
+    at [90mfile:///C:/User
+s/shoru/Project/Web-App/per
+sonal_ai_assistanta/[39mno
+de_modules/[4m.pnpm[24m/@
+vitest+runner@2.1.9/node_mo
+dules/[4m@vitest[24m/runn
+er/dist/index.js:533:11
+    at runWithTimeout [90m
+(file:///C:/Users/shoru/Pro
+ject/Web-App/personal_ai_as
+sistanta/[39mnode_modules/
+[4m.pnpm[24m/@vitest+runn
+er@2.1.9/node_modules/[4m@
+vitest[24m/runner/dist/ind
+ex.js:39:7[90m)[39m
+    at runTest [90m(file:/
+//C:/Users/shoru/Project/We
+b-App/personal_ai_assistant
+a/[39mnode_modules/[4m.pn
+pm[24m/@vitest+runner@2.1.
+9/node_modules/[4m@vitest
+[24m/runner/dist/index.js:1
+056:17[90m)[39m
+[90m    at 
+processTicksAndRejections (
+node:internal/process/task_
+queues:105:5)[39m
+    at runSuite [90m(file:
+///C:/Users/shoru/Project/W
+eb-App/personal_ai_assistan
+ta/[39mnode_modules/[4m.p
+npm[24m/@vitest+runner@2.1
+.9/node_modules/[4m@vitest
+[24m/runner/dist/index.js:
+1205:15[90m)[39m
+
+[90mstderr[2m | server/tr
+iggerDetection.test.ts[2m 
+> [22m[2mTrigger 
+Detection System[2m > 
+[22m[2mshould generate 
+different strategies for 
+different urge levels
+[22m[39mError generating 
+coping strategies: Error: 
+OPENAI_API_KEY is not 
+configured
+    at assertApiKey [90m(C
+:\Users\shoru\Project\Web-A
+pp\personal_ai_assistanta\
+[39mserver\_core\llm.ts:219
+:11[90m)[39m
+    at Module.invokeLLM [9
+0m(C:\Users\shoru\Project\W
+eb-App\personal_ai_assistan
+ta\[39mserver\_core\llm.ts
+:269:3[90m)[39m
+    at Module.generateCopin
+gStrategies [90m(C:\Users\
+shoru\Project\Web-App\perso
+nal_ai_assistanta\[39mserv
+er\triggerDetection.ts:128:
+28[90m)[39m
+    at __vite_ssr_import_0_
+_.it.timeout [90m(C:\Users
+\shoru\Project\Web-App\pers
+onal_ai_assistanta\[39mser
+ver\triggerDetection.test.t
+s:90:37[90m)[39m
+    at [90mfile:///C:/User
+s/shoru/Project/Web-App/per
+sonal_ai_assistanta/[39mno
+de_modules/[4m.pnpm[24m/@
+vitest+runner@2.1.9/node_mo
+dules/[4m@vitest[24m/runn
+er/dist/index.js:146:14
+    at [90mfile:///C:/User
+s/shoru/Project/Web-App/per
+sonal_ai_assistanta/[39mno
+de_modules/[4m.pnpm[24m/@
+vitest+runner@2.1.9/node_mo
+dules/[4m@vitest[24m/runn
+er/dist/index.js:533:11
+    at runWithTimeout [90m
+(file:///C:/Users/shoru/Pro
+ject/Web-App/personal_ai_as
+sistanta/[39mnode_modules/
+[4m.pnpm[24m/@vitest+runn
+er@2.1.9/node_modules/[4m@
+vitest[24m/runner/dist/ind
+ex.js:39:7[90m)[39m
+    at runTest [90m(file:/
+//C:/Users/shoru/Project/We
+b-App/personal_ai_assistant
+a/[39mnode_modules/[4m.pn
+pm[24m/@vitest+runner@2.1.
+9/node_modules/[4m@vitest
+[24m/runner/dist/index.js:1
+056:17[90m)[39m
+[90m    at 
+processTicksAndRejections (
+node:internal/process/task_
+queues:105:5)[39m
+    at runSuite [90m(file:
+///C:/Users/shoru/Project/W
+eb-App/personal_ai_assistan
+ta/[39mnode_modules/[4m.p
+npm[24m/@vitest+runner@2.1
+.9/node_modules/[4m@vitest
+[24m/runner/dist/index.js:
+1205:15[90m)[39m
+Error generating coping 
+strategies: Error: 
+OPENAI_API_KEY is not 
+configured
+    at assertApiKey [90m(C
+:\Users\shoru\Project\Web-A
+pp\personal_ai_assistanta\
+[39mserver\_core\llm.ts:219
+:11[90m)[39m
+    at Module.invokeLLM [9
+0m(C:\Users\shoru\Project\W
+eb-App\personal_ai_assistan
+ta\[39mserver\_core\llm.ts
+:269:3[90m)[39m
+    at Module.generateCopin
+gStrategies [90m(C:\Users\
+shoru\Project\Web-App\perso
+nal_ai_assistanta\[39mserv
+er\triggerDetection.ts:128:
+28[90m)[39m
+    at __vite_ssr_import_0_
+_.it.timeout [90m(C:\Users
+\shoru\Project\Web-App\pers
+onal_ai_assistanta\[39mser
+ver\triggerDetection.test.t
+s:96:38[90m)[39m
+[90m    at 
+processTicksAndRejections (
+node:internal/process/task_
+queues:105:5)[39m
+    at [90mfile:///C:/User
+s/shoru/Project/Web-App/per
+sonal_ai_assistanta/[39mno
+de_modules/[4m.pnpm[24m/@
+vitest+runner@2.1.9/node_mo
+dules/[4m@vitest[24m/runn
+er/dist/index.js:533:5
+    at runTest [90m(file:/
+//C:/Users/shoru/Project/We
+b-App/personal_ai_assistant
+a/[39mnode_modules/[4m.pn
+pm[24m/@vitest+runner@2.1.
+9/node_modules/[4m@vitest
+[24m/runner/dist/index.js:1
+056:11[90m)[39m
+    at runSuite [90m(file:
+///C:/Users/shoru/Project/W
+eb-App/personal_ai_assistan
+ta/[39mnode_modules/[4m.p
+npm[24m/@vitest+runner@2.1
+.9/node_modules/[4m@vitest
+[24m/runner/dist/index.js:
+1205:15[90m)[39m
+    at runSuite [90m(file:
+///C:/Users/shoru/Project/W
+eb-App/personal_ai_assistan
+ta/[39mnode_modules/[4m.p
+npm[24m/@vitest+runner@2.1
+.9/node_modules/[4m@vitest
+[24m/runner/dist/index.js:
+1205:15[90m)[39m
+    at runFiles [90m(file:
+///C:/Users/shoru/Project/W
+eb-App/personal_ai_assistan
+ta/[39mnode_modules/[4m.p
+npm[24m/@vitest+runner@2.1
+.9/node_modules/[4m@vitest
+[24m/runner/dist/index.js:
+1262:5[90m)[39m
+
+ [31m├ù[39m server/triggerDetection.test.ts[2m > [22mTrigger Detection System[2m > [22mshould analyze trigger patterns
+[31m   ΓåÆ Database not available[39m
+ [32mΓ£ô[39m server/triggerDetection.test.ts[2m > [22mTrigger Detection System[2m > [22mshould generate coping strategies for high urge
+ [32mΓ£ô[39m server/triggerDetection.test.ts[2m > [22mTrigger Detection System[2m > [22mshould generate strategies with valid effectiveness rating
+ [32mΓ£ô[39m server/triggerDetection.test.ts[2m > [22mTrigger Detection System[2m > [22mshould generate strategies for stimulant urges
+ [32mΓ£ô[39m server/triggerDetection.test.ts[2m > [22mTrigger Detection System[2m > [22mshould calculate time-based risk multiplier correctly
+ [31m├ù[39m server/triggerDetection.test.ts[2m > [22mTrigger Detection System[2m > [22mshould generate fallback strategies if LLM fails
+[31m   ΓåÆ expected 'Take 5 deep breaths (4-7-8 technique:ΓÇª' to contain 'breathe'[39m
+ [32mΓ£ô[39m server/triggerDetection.test.ts[2m > [22mTrigger Detection System[2m > [22mshould generate different strategies for different urge levels
+ [32mΓ£ô[39m server/auth.logout.test.ts[2m > [22mauth.logout[2m > [22mclears the session cookie and reports success
+ [31m├ù[39m server/insights.test.ts[2m > [22mWeekly Insights Router[2m > [22mshould generate weekly insights with all metrics
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/insights.test.ts[2m > [22mWeekly Insights Router[2m > [22mshould calculate task completion metrics correctly
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/insights.test.ts[2m > [22mWeekly Insights Router[2m > [22mshould include sleep metrics
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/insights.test.ts[2m > [22mWeekly Insights Router[2m > [22mshould include mood and energy metrics
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/insights.test.ts[2m > [22mWeekly Insights Router[2m > [22mshould track habit metrics
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/insights.test.ts[2m > [22mWeekly Insights Router[2m > [22mshould generate AI insights text
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/insights.test.ts[2m > [22mWeekly Insights Router[2m > [22mshould include workout metrics
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/daily-plan.test.ts[2m > [22mDaily Plan Generation[2m > [22mshould generate daily plan with default energy level
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/daily-plan.test.ts[2m > [22mDaily Plan Generation[2m > [22mshould generate daily plan with custom energy level
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/daily-plan.test.ts[2m > [22mDaily Plan Generation[2m > [22mshould include tasks in the plan
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/daily-plan.test.ts[2m > [22mDaily Plan Generation[2m > [22mshould include breaks in the plan
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/daily-plan.test.ts[2m > [22mDaily Plan Generation[2m > [22mshould include strategies in the plan
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/daily-plan.test.ts[2m > [22mDaily Plan Generation[2m > [22mshould include summary in the plan
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/daily-plan.test.ts[2m > [22mDaily Plan Generation[2m > [22mshould have valid task structure
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/daily-plan.test.ts[2m > [22mDaily Plan Generation[2m > [22mshould have valid break structure
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/daily-plan.test.ts[2m > [22mDaily Plan Generation[2m > [22mshould respect energy level input
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/daily-plan.test.ts[2m > [22mDaily Plan Generation[2m > [22mshould include task count in result
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/integrations.test.ts[2m > [22mTelegram Integration[2m > [22mshould link Telegram chat ID
+[31m   ΓåÆ Database not available[39m
+ [32mΓ£ô[39m server/integrations.test.ts[2m > [22mTelegram Integration[2m > [22mshould send daily plan via Telegram
+ [32mΓ£ô[39m server/integrations.test.ts[2m > [22mGoogle Calendar Integration[2m > [22mshould link Google Calendar account
+ [31m├ù[39m server/integrations.test.ts[2m > [22mGoogle Calendar Integration[2m > [22mshould sync task to Google Calendar
+[31m   ΓåÆ Database not available[39m
+ [32mΓ£ô[39m server/integrations.test.ts[2m > [22mNotifications Router[2m > [22mshould list notifications for user
+ [31m├ù[39m server/integrations.test.ts[2m > [22mNotifications Router[2m > [22mshould mark notification as read
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/integrations.test.ts[2m > [22mNotifications Router[2m > [22mshould create habit trigger alert
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/integrations.test.ts[2m > [22mNotifications Router[2m > [22mshould create habit trigger alert with high urge level
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/integrations.test.ts[2m > [22mNotifications Router[2m > [22mshould create habit trigger alert for stimulants
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/ai.test.ts[2m > [22mAI Router - Process Thought[2m > [22mshould process a thought and create tasks
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/ai.test.ts[2m > [22mAI Router - Process Thought[2m > [22mshould handle complex thoughts with multiple tasks
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/ai.test.ts[2m > [22mAI Router - Process Thought[2m > [22mshould extract priority levels from thoughts
+[31m   ΓåÆ Database not available[39m
+ [32mΓ£ô[39m server/ai.test.ts[2m > [22mAI Router - Process Thought[2m > [22mshould reject empty thoughts
+ [31m├ù[39m server/ai.test.ts[2m > [22mAI Router - Process Thought[2m > [22mshould create tasks with valid structure
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/features.test.ts[2m > [22mTasks API[2m > [22mshould create a task
+[31m   ΓåÆ Database not available[39m
+ [32mΓ£ô[39m server/features.test.ts[2m > [22mTasks API[2m > [22mshould list tasks for user
+ [31m├ù[39m server/features.test.ts[2m > [22mTasks API[2m > [22mshould complete a task
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/features.test.ts[2m > [22mTasks API[2m > [22mshould delete a task
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/features.test.ts[2m > [22mProjects API[2m > [22mshould create a project
+[31m   ΓåÆ Database not available[39m
+ [32mΓ£ô[39m server/features.test.ts[2m > [22mProjects API[2m > [22mshould list projects for user
+ [31m├ù[39m server/features.test.ts[2m > [22mProjects API[2m > [22mshould update a project
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/features.test.ts[2m > [22mProjects API[2m > [22mshould delete a project
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/features.test.ts[2m > [22mHabits API[2m > [22mshould log a habit
+[31m   ΓåÆ Database not available[39m
+ [32mΓ£ô[39m server/features.test.ts[2m > [22mHabits API[2m > [22mshould list habits for user
+ [31m├ù[39m server/features.test.ts[2m > [22mHabits API[2m > [22mshould delete a habit entry
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/features.test.ts[2m > [22mSleep API[2m > [22mshould log sleep
+[31m   ΓåÆ Database not available[39m
+ [32mΓ£ô[39m server/features.test.ts[2m > [22mSleep API[2m > [22mshould list sleep entries for user
+ [31m├ù[39m server/features.test.ts[2m > [22mSleep API[2m > [22mshould delete a sleep entry
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/features.test.ts[2m > [22mGym/Diet API[2m > [22mshould log gym/diet entry
+[31m   ΓåÆ Database not available[39m
+ [32mΓ£ô[39m server/features.test.ts[2m > [22mGym/Diet API[2m > [22mshould list gym/diet entries for user
+ [31m├ù[39m server/features.test.ts[2m > [22mGym/Diet API[2m > [22mshould delete a gym/diet entry
+[31m   ΓåÆ Database not available[39m
+ [31m├ù[39m server/features.test.ts[2m > [22mDaily Review API[2m > [22mshould create a daily review
+[31m   ΓåÆ Database not available[39m
+ [32mΓ£ô[39m server/features.test.ts[2m > [22mDaily Review API[2m > [22mshould list daily reviews for user
+ [31m├ù[39m server/features.test.ts[2m > [22mDaily Review API[2m > [22mshould delete a daily review
+[31m   ΓåÆ Database not available[39m
+
+[31mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[1m
+[7m Failed Tests 43 [27m
+[22mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[
+39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m 
+server/ai.test.ts[2m > 
+[22mAI Router - Process 
+Thought[2m > [22mshould 
+process a thought and 
+create tasks
+[31m[1m[7m FAIL 
+[27m[22m[39m 
+server/ai.test.ts[2m > 
+[22mAI Router - Process 
+Thought[2m > [22mshould 
+handle complex thoughts 
+with multiple tasks
+[31m[1m[7m FAIL 
+[27m[22m[39m 
+server/ai.test.ts[2m > 
+[22mAI Router - Process 
+Thought[2m > [22mshould 
+extract priority levels 
+from thoughts
+[31m[1m[7m FAIL 
+[27m[22m[39m 
+server/ai.test.ts[2m > 
+[22mAI Router - Process 
+Thought[2m > [22mshould 
+create tasks with valid 
+structure
+[31m[1mTRPCError[22m: 
+Database not available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m516:24[22m[
+39m
+    [90m514| [39m      [
+33m.[39m[34mmutation[39m
+([35masync[39m ({ 
+ctx[33m,[39m input }) 
+[33m=>[39m {
+    [90m515| [39m        
+[35mconst[39m db 
+[33m=[39m 
+[35mawait[39m [34mgetDb
+[39m()[33m;[39m
+    [90m516| [39m        
+[35mif[39m 
+([33m![39mdb) 
+[35mthrow[39m 
+[35mnew[39m [33mError[3
+9m([32m"Database not 
+available"[39m)[33m;[39m
+    [90m   | [39m        
+               [31m^[39m
+    [90m517| [39m
+    [90m518| [39m        
+[35mconst[39m 
+userProjects [33m=[39m 
+[35mawait[39m db[33m.[3
+9m[34mselect[39m()[33m.
+[39m[35mfrom[39m(projects
+)[33m.[39m[34mwhere[39m
+([34meq[39mΓÇª
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[22m[39
+m
+[31m[1mSerialized 
+Error:[22m[39m [90m{ 
+code: 
+'INTERNAL_SERVER_ERROR' 
+}[39m
+[31m[1mCaused by: 
+Error[22m: Database not 
+available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m516:24[22m[
+39m
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[1/
+43]ΓÄ»[22m[39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m server/dail
+y-plan.test.ts[2m > 
+[22mDaily Plan 
+Generation[2m > 
+[22mshould generate daily 
+plan with default energy 
+level
+[31m[1m[7m FAIL 
+[27m[22m[39m server/dail
+y-plan.test.ts[2m > 
+[22mDaily Plan 
+Generation[2m > 
+[22mshould generate daily 
+plan with custom energy 
+level
+[31m[1m[7m FAIL 
+[27m[22m[39m server/dail
+y-plan.test.ts[2m > 
+[22mDaily Plan 
+Generation[2m > 
+[22mshould include tasks 
+in the plan
+[31m[1m[7m FAIL 
+[27m[22m[39m server/dail
+y-plan.test.ts[2m > 
+[22mDaily Plan 
+Generation[2m > 
+[22mshould include breaks 
+in the plan
+[31m[1m[7m FAIL 
+[27m[22m[39m server/dail
+y-plan.test.ts[2m > 
+[22mDaily Plan 
+Generation[2m > 
+[22mshould include 
+strategies in the plan
+[31m[1m[7m FAIL 
+[27m[22m[39m server/dail
+y-plan.test.ts[2m > 
+[22mDaily Plan 
+Generation[2m > 
+[22mshould include 
+summary in the plan
+[31m[1m[7m FAIL 
+[27m[22m[39m server/dail
+y-plan.test.ts[2m > 
+[22mDaily Plan 
+Generation[2m > 
+[22mshould have valid 
+task structure
+[31m[1m[7m FAIL 
+[27m[22m[39m server/dail
+y-plan.test.ts[2m > 
+[22mDaily Plan 
+Generation[2m > 
+[22mshould have valid 
+break structure
+[31m[1m[7m FAIL 
+[27m[22m[39m server/dail
+y-plan.test.ts[2m > 
+[22mDaily Plan 
+Generation[2m > 
+[22mshould respect energy 
+level input
+[31m[1m[7m FAIL 
+[27m[22m[39m server/dail
+y-plan.test.ts[2m > 
+[22mDaily Plan 
+Generation[2m > 
+[22mshould include task 
+count in result
+[31m[1mTRPCError[22m: 
+Database not available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m598:24[22m[
+39m
+    [90m596| [39m      [
+33m.[39m[34mquery[39m([
+35masync[39m ({ 
+ctx[33m,[39m input }) 
+[33m=>[39m {
+    [90m597| [39m        
+[35mconst[39m db 
+[33m=[39m 
+[35mawait[39m [34mgetDb
+[39m()[33m;[39m
+    [90m598| [39m        
+[35mif[39m 
+([33m![39mdb) 
+[35mthrow[39m 
+[35mnew[39m [33mError[3
+9m([32m"Database not 
+available"[39m)[33m;[39m
+    [90m   | [39m        
+               [31m^[39m
+    [90m599| [39m
+    [90m600| [39m        
+[35mconst[39m today 
+[33m=[39m [35mnew[39m 
+[33mDate[39m()[33m;[39m
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[22m[39
+m
+[31m[1mSerialized 
+Error:[22m[39m [90m{ 
+code: 
+'INTERNAL_SERVER_ERROR' 
+}[39m
+[31m[1mCaused by: 
+Error[22m: Database not 
+available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m598:24[22m[
+39m
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[2/
+43]ΓÄ»[22m[39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m server/feat
+ures.test.ts[2m > 
+[22mTasks API[2m > 
+[22mshould create a task
+[31m[1m[7m FAIL 
+[27m[22m[39m server/feat
+ures.test.ts[2m > 
+[22mTasks API[2m > 
+[22mshould complete a task
+[31m[1m[7m FAIL 
+[27m[22m[39m server/feat
+ures.test.ts[2m > 
+[22mTasks API[2m > 
+[22mshould delete a task
+[31m[1mTRPCError[22m: 
+Database not available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m62:24[22m[3
+9m
+    [90m 60| [39m      [
+33m.[39m[34mmutation[39m
+([35masync[39m ({ 
+ctx[33m,[39m input }) 
+[33m=>[39m {
+    [90m 61| [39m        
+[35mconst[39m db 
+[33m=[39m 
+[35mawait[39m [34mgetDb
+[39m()[33m;[39m
+    [90m 62| [39m        
+[35mif[39m 
+([33m![39mdb) 
+[35mthrow[39m 
+[35mnew[39m [33mError[3
+9m([32m"Database not 
+available"[39m)[33m;[39m
+    [90m   | [39m        
+               [31m^[39m
+    [90m 63| [39m        
+    [90m 64| [39m        
+[35mconst[39m 
+insertData[33m:[39m 
+[33mInsertTask[39m 
+[33m=[39m {
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[22m[39
+m
+[31m[1mSerialized 
+Error:[22m[39m [90m{ 
+code: 
+'INTERNAL_SERVER_ERROR' 
+}[39m
+[31m[1mCaused by: 
+Error[22m: Database not 
+available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m62:24[22m[3
+9m
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[3/
+43]ΓÄ»[22m[39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m server/feat
+ures.test.ts[2m > 
+[22mProjects API[2m > 
+[22mshould create a 
+project
+[31m[1m[7m FAIL 
+[27m[22m[39m server/feat
+ures.test.ts[2m > 
+[22mProjects API[2m > 
+[22mshould update a 
+project
+[31m[1m[7m FAIL 
+[27m[22m[39m server/feat
+ures.test.ts[2m > 
+[22mProjects API[2m > 
+[22mshould delete a 
+project
+[31m[1mTRPCError[22m: 
+Database not available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m153:24[22m[
+39m
+    [90m151| [39m      [
+33m.[39m[34mmutation[39m
+([35masync[39m ({ 
+ctx[33m,[39m input }) 
+[33m=>[39m {
+    [90m152| [39m        
+[35mconst[39m db 
+[33m=[39m 
+[35mawait[39m [34mgetDb
+[39m()[33m;[39m
+    [90m153| [39m        
+[35mif[39m 
+([33m![39mdb) 
+[35mthrow[39m 
+[35mnew[39m [33mError[3
+9m([32m"Database not 
+available"[39m)[33m;[39m
+    [90m   | [39m        
+               [31m^[39m
+    [90m154| [39m
+    [90m155| [39m        
+[35mconst[39m 
+insertData[33m:[39m 
+[33mInsertProject[39m 
+[33m=[39m {
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[22m[39
+m
+[31m[1mSerialized 
+Error:[22m[39m [90m{ 
+code: 
+'INTERNAL_SERVER_ERROR' 
+}[39m
+[31m[1mCaused by: 
+Error[22m: Database not 
+available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m153:24[22m[
+39m
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[4/
+43]ΓÄ»[22m[39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m server/feat
+ures.test.ts[2m > 
+[22mHabits API[2m > 
+[22mshould log a habit
+[31m[1m[7m FAIL 
+[27m[22m[39m server/feat
+ures.test.ts[2m > 
+[22mHabits API[2m > 
+[22mshould delete a habit 
+entry
+[31m[1mTRPCError[22m: 
+Database not available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m219:24[22m[
+39m
+    [90m217| [39m      [
+33m.[39m[34mmutation[39m
+([35masync[39m ({ 
+ctx[33m,[39m input }) 
+[33m=>[39m {
+    [90m218| [39m        
+[35mconst[39m db 
+[33m=[39m 
+[35mawait[39m [34mgetDb
+[39m()[33m;[39m
+    [90m219| [39m        
+[35mif[39m 
+([33m![39mdb) 
+[35mthrow[39m 
+[35mnew[39m [33mError[3
+9m([32m"Database not 
+available"[39m)[33m;[39m
+    [90m   | [39m        
+               [31m^[39m
+    [90m220| [39m
+    [90m221| [39m        
+[35mconst[39m 
+insertData[33m:[39m 
+[33mInsertHabit[39m 
+[33m=[39m {
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[22m[39
+m
+[31m[1mSerialized 
+Error:[22m[39m [90m{ 
+code: 
+'INTERNAL_SERVER_ERROR' 
+}[39m
+[31m[1mCaused by: 
+Error[22m: Database not 
+available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m219:24[22m[
+39m
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[5/
+43]ΓÄ»[22m[39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m server/feat
+ures.test.ts[2m > 
+[22mSleep API[2m > 
+[22mshould log sleep
+[31m[1m[7m FAIL 
+[27m[22m[39m server/feat
+ures.test.ts[2m > 
+[22mSleep API[2m > 
+[22mshould delete a sleep 
+entry
+[31m[1mTRPCError[22m: 
+Database not available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m262:24[22m[
+39m
+    [90m260| [39m      [
+33m.[39m[34mmutation[39m
+([35masync[39m ({ 
+ctx[33m,[39m input }) 
+[33m=>[39m {
+    [90m261| [39m        
+[35mconst[39m db 
+[33m=[39m 
+[35mawait[39m [34mgetDb
+[39m()[33m;[39m
+    [90m262| [39m        
+[35mif[39m 
+([33m![39mdb) 
+[35mthrow[39m 
+[35mnew[39m [33mError[3
+9m([32m"Database not 
+available"[39m)[33m;[39m
+    [90m   | [39m        
+               [31m^[39m
+    [90m263| [39m
+    [90m264| [39m        
+[35mconst[39m sleepHours 
+[33m=[39m (input[33m.[3
+9mwakeTime[33m.[39m[34mg
+etTime[39m() [33m-[39m i
+nput[33m.[39msleepTimeΓÇª
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[22m[39
+m
+[31m[1mSerialized 
+Error:[22m[39m [90m{ 
+code: 
+'INTERNAL_SERVER_ERROR' 
+}[39m
+[31m[1mCaused by: 
+Error[22m: Database not 
+available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m262:24[22m[
+39m
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[6/
+43]ΓÄ»[22m[39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m server/feat
+ures.test.ts[2m > 
+[22mGym/Diet API[2m > 
+[22mshould log gym/diet 
+entry
+[31m[1m[7m FAIL 
+[27m[22m[39m server/feat
+ures.test.ts[2m > 
+[22mGym/Diet API[2m > 
+[22mshould delete a 
+gym/diet entry
+[31m[1mTRPCError[22m: 
+Database not available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m309:24[22m[
+39m
+    [90m307| [39m      [
+33m.[39m[34mmutation[39m
+([35masync[39m ({ 
+ctx[33m,[39m input }) 
+[33m=>[39m {
+    [90m308| [39m        
+[35mconst[39m db 
+[33m=[39m 
+[35mawait[39m [34mgetDb
+[39m()[33m;[39m
+    [90m309| [39m        
+[35mif[39m 
+([33m![39mdb) 
+[35mthrow[39m 
+[35mnew[39m [33mError[3
+9m([32m"Database not 
+available"[39m)[33m;[39m
+    [90m   | [39m        
+               [31m^[39m
+    [90m310| [39m
+    [90m311| [39m        
+[35mconst[39m 
+insertData[33m:[39m 
+[33mInsertGymDiet[39m 
+[33m=[39m {
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[22m[39
+m
+[31m[1mSerialized 
+Error:[22m[39m [90m{ 
+code: 
+'INTERNAL_SERVER_ERROR' 
+}[39m
+[31m[1mCaused by: 
+Error[22m: Database not 
+available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m309:24[22m[
+39m
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[7/
+43]ΓÄ»[22m[39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m server/feat
+ures.test.ts[2m > 
+[22mDaily Review API[2m 
+> [22mshould create a 
+daily review
+[31m[1m[7m FAIL 
+[27m[22m[39m server/feat
+ures.test.ts[2m > 
+[22mDaily Review API[2m 
+> [22mshould delete a 
+daily review
+[31m[1mTRPCError[22m: 
+Database not available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m355:24[22m[
+39m
+    [90m353| [39m      [
+33m.[39m[34mmutation[39m
+([35masync[39m ({ 
+ctx[33m,[39m input }) 
+[33m=>[39m {
+    [90m354| [39m        
+[35mconst[39m db 
+[33m=[39m 
+[35mawait[39m [34mgetDb
+[39m()[33m;[39m
+    [90m355| [39m        
+[35mif[39m 
+([33m![39mdb) 
+[35mthrow[39m 
+[35mnew[39m [33mError[3
+9m([32m"Database not 
+available"[39m)[33m;[39m
+    [90m   | [39m        
+               [31m^[39m
+    [90m356| [39m
+    [90m357| [39m        
+[35mconst[39m 
+insertData[33m:[39m [33m
+InsertDailyReview[39m 
+[33m=[39m {
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[22m[39
+m
+[31m[1mSerialized 
+Error:[22m[39m [90m{ 
+code: 
+'INTERNAL_SERVER_ERROR' 
+}[39m
+[31m[1mCaused by: 
+Error[22m: Database not 
+available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m355:24[22m[
+39m
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[8/
+43]ΓÄ»[22m[39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m server/insi
+ghts.test.ts[2m > 
+[22mWeekly Insights 
+Router[2m > [22mshould 
+generate weekly insights 
+with all metrics
+[31m[1m[7m FAIL 
+[27m[22m[39m server/insi
+ghts.test.ts[2m > 
+[22mWeekly Insights 
+Router[2m > [22mshould 
+calculate task completion 
+metrics correctly
+[31m[1m[7m FAIL 
+[27m[22m[39m server/insi
+ghts.test.ts[2m > 
+[22mWeekly Insights 
+Router[2m > [22mshould 
+include sleep metrics
+[31m[1m[7m FAIL 
+[27m[22m[39m server/insi
+ghts.test.ts[2m > 
+[22mWeekly Insights 
+Router[2m > [22mshould 
+include mood and energy 
+metrics
+[31m[1m[7m FAIL 
+[27m[22m[39m server/insi
+ghts.test.ts[2m > 
+[22mWeekly Insights 
+Router[2m > [22mshould 
+track habit metrics
+[31m[1m[7m FAIL 
+[27m[22m[39m server/insi
+ghts.test.ts[2m > 
+[22mWeekly Insights 
+Router[2m > [22mshould 
+generate AI insights text
+[31m[1m[7m FAIL 
+[27m[22m[39m server/insi
+ghts.test.ts[2m > 
+[22mWeekly Insights 
+Router[2m > [22mshould 
+include workout metrics
+[31m[1mTRPCError[22m: 
+Database not available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m390:24[22m[
+39m
+    [90m388| [39m      [
+33m.[39m[34mquery[39m([
+35masync[39m ({ 
+ctx[33m,[39m input }) 
+[33m=>[39m {
+    [90m389| [39m        
+[35mconst[39m db 
+[33m=[39m 
+[35mawait[39m [34mgetDb
+[39m()[33m;[39m
+    [90m390| [39m        
+[35mif[39m 
+([33m![39mdb) 
+[35mthrow[39m 
+[35mnew[39m [33mError[3
+9m([32m"Database not 
+available"[39m)[33m;[39m
+    [90m   | [39m        
+               [31m^[39m
+    [90m391| [39m
+    [90m392| [39m        
+[35mconst[39m endDate 
+[33m=[39m [35mnew[39m 
+[33mDate[39m()[33m;[39m
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[22m[39
+m
+[31m[1mSerialized 
+Error:[22m[39m [90m{ 
+code: 
+'INTERNAL_SERVER_ERROR' 
+}[39m
+[31m[1mCaused by: 
+Error[22m: Database not 
+available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m390:24[22m[
+39m
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[9/
+43]ΓÄ»[22m[39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m server/inte
+grations.test.ts[2m > 
+[22mTelegram 
+Integration[2m > 
+[22mshould link Telegram 
+chat ID
+[31m[1mTRPCError[22m: 
+Database not available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m731:24[22m[
+39m
+    [90m729| [39m      [
+33m.[39m[34mmutation[39m
+([35masync[39m ({ 
+ctx[33m,[39m input }) 
+[33m=>[39m {
+    [90m730| [39m        
+[35mconst[39m db 
+[33m=[39m 
+[35mawait[39m [34mgetDb
+[39m()[33m;[39m
+    [90m731| [39m        
+[35mif[39m 
+([33m![39mdb) 
+[35mthrow[39m 
+[35mnew[39m [33mError[3
+9m([32m"Database not 
+available"[39m)[33m;[39m
+    [90m   | [39m        
+               [31m^[39m
+    [90m732| [39m        
+[90m// In real 
+implementation, update 
+user's telegramChatId[39m
+    [90m733| [39m        
+[35mreturn[39m { 
+success[33m:[39m 
+[35mtrue[39m[33m,[39m 
+message[33m:[39m 
+[32m"Telegram linked 
+successfully[39mΓÇª
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[22m[39
+m
+[31m[1mSerialized 
+Error:[22m[39m [90m{ 
+code: 
+'INTERNAL_SERVER_ERROR' 
+}[39m
+[31m[1mCaused by: 
+Error[22m: Database not 
+available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m731:24[22m[
+39m
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[10/43
+]ΓÄ»[22m[39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m server/inte
+grations.test.ts[2m > 
+[22mGoogle Calendar 
+Integration[2m > 
+[22mshould sync task to 
+Google Calendar
+[31m[1mTRPCError[22m: 
+Database not available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m758:24[22m[
+39m
+    [90m756| [39m      [
+33m.[39m[34mmutation[39m
+([35masync[39m ({ 
+ctx[33m,[39m input }) 
+[33m=>[39m {
+    [90m757| [39m        
+[35mconst[39m db 
+[33m=[39m 
+[35mawait[39m [34mgetDb
+[39m()[33m;[39m
+    [90m758| [39m        
+[35mif[39m 
+([33m![39mdb) 
+[35mthrow[39m 
+[35mnew[39m [33mError[3
+9m([32m"Database not 
+available"[39m)[33m;[39m
+    [90m   | [39m        
+               [31m^[39m
+    [90m759| [39m        
+[90m// In real 
+implementation, create 
+calendar event[39m
+    [90m760| [39m        
+[35mreturn[39m { 
+success[33m:[39m 
+[35mtrue[39m[33m,[39m 
+eventId[33m:[39m 
+[32m"event_123"[39m 
+}[33m;[39m
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[22m[39
+m
+[31m[1mSerialized 
+Error:[22m[39m [90m{ 
+code: 
+'INTERNAL_SERVER_ERROR' 
+}[39m
+[31m[1mCaused by: 
+Error[22m: Database not 
+available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m758:24[22m[
+39m
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[11/43
+]ΓÄ»[22m[39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m server/inte
+grations.test.ts[2m > 
+[22mNotifications 
+Router[2m > [22mshould 
+mark notification as read
+[31m[1mTRPCError[22m: 
+Database not available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m776:24[22m[
+39m
+    [90m774| [39m      [
+33m.[39m[34mmutation[39m
+([35masync[39m ({ 
+ctx[33m,[39m input }) 
+[33m=>[39m {
+    [90m775| [39m        
+[35mconst[39m db 
+[33m=[39m 
+[35mawait[39m [34mgetDb
+[39m()[33m;[39m
+    [90m776| [39m        
+[35mif[39m 
+([33m![39mdb) 
+[35mthrow[39m 
+[35mnew[39m [33mError[3
+9m([32m"Database not 
+available"[39m)[33m;[39m
+    [90m   | [39m        
+               [31m^[39m
+    [90m777| [39m        
+[35mawait[39m db[33m.[3
+9m[34mupdate[39m(notifica
+tions)[33m.[39m[35mset[
+39m({ isRead[33m:[39m 
+[35mtrue[39m })[33m.[39
+m[34mwhere[39m([34mand[
+39mΓÇª
+    [90m778| [39m        
+[35mreturn[39m { 
+success[33m:[39m 
+[35mtrue[39m }[33m;[39m
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[22m[39
+m
+[31m[1mSerialized 
+Error:[22m[39m [90m{ 
+code: 
+'INTERNAL_SERVER_ERROR' 
+}[39m
+[31m[1mCaused by: 
+Error[22m: Database not 
+available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m776:24[22m[
+39m
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[12/43
+]ΓÄ»[22m[39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m server/inte
+grations.test.ts[2m > 
+[22mNotifications 
+Router[2m > [22mshould 
+create habit trigger alert
+[31m[1m[7m FAIL 
+[27m[22m[39m server/inte
+grations.test.ts[2m > 
+[22mNotifications 
+Router[2m > [22mshould 
+create habit trigger alert 
+with high urge level
+[31m[1m[7m FAIL 
+[27m[22m[39m server/inte
+grations.test.ts[2m > 
+[22mNotifications 
+Router[2m > [22mshould 
+create habit trigger alert 
+for stimulants
+[31m[1mTRPCError[22m: 
+Database not available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m789:24[22m[
+39m
+    [90m787| [39m      [
+33m.[39m[34mmutation[39m
+([35masync[39m ({ 
+ctx[33m,[39m input }) 
+[33m=>[39m {
+    [90m788| [39m        
+[35mconst[39m db 
+[33m=[39m 
+[35mawait[39m [34mgetDb
+[39m()[33m;[39m
+    [90m789| [39m        
+[35mif[39m 
+([33m![39mdb) 
+[35mthrow[39m 
+[35mnew[39m [33mError[3
+9m([32m"Database not 
+available"[39m)[33m;[39m
+    [90m   | [39m        
+               [31m^[39m
+    [90m790| [39m
+    [90m791| [39m        
+[35mconst[39m 
+insertData[33m:[39m [33m
+InsertNotification[39m 
+[33m=[39m {
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[22m[39
+m
+[31m[1mSerialized 
+Error:[22m[39m [90m{ 
+code: 
+'INTERNAL_SERVER_ERROR' 
+}[39m
+[31m[1mCaused by: 
+Error[22m: Database not 
+available[39m
+[36m [2mΓ¥»[22m server/r
+outers.ts:[2m789:24[22m[
+39m
+[90m [2mΓ¥»[22m 
+resolveMiddleware node_modu
+les/.pnpm/@trpc+server@11.6
+.0_typescript@5.9.3/node_mo
+dules/@trpc/server/src/unst
+able-core-do-not-import/pro
+cedureBuilder.ts:[2m571:22
+[22m[39m
+[90m [2mΓ¥»[22m 
+callRecursive node_modules/
+.pnpm/@trpc+server@11.6.0_t
+ypescript@5.9.3/node_module
+s/@trpc/server/src/unstable
+-core-do-not-import/procedu
+reBuilder.ts:[2m633:20[22
+m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[13/43
+]ΓÄ»[22m[39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m server/trig
+gerDetection.test.ts[2m > 
+[22mTrigger Detection 
+System[2m > [22mshould 
+analyze trigger patterns
+[31m[1mError[22m: 
+Database not available[39m
+[36m [2mΓ¥»[22m Module.a
+nalyzeTriggerPatterns serve
+r/triggerDetection.ts:[2m2
+8:18[22m[39m
+    [90m 26| 
+[39m[35mexport[39m 
+[35masync[39m 
+[35mfunction[39m [34mana
+lyzeTriggerPatterns[39m(us
+erId[33m:[39m 
+number)[33m:[39m [33mPro
+mise[39m[33m<[39mΓÇª
+    [90m 27| [39m  
+[35mconst[39m db 
+[33m=[39m 
+[35mawait[39m [34mgetDb
+[39m()[33m;[39m
+    [90m 28| [39m  
+[35mif[39m 
+([33m![39mdb) 
+[35mthrow[39m 
+[35mnew[39m [33mError[3
+9m([32m"Database not 
+available"[39m)[33m;[39m
+    [90m   | [39m        
+         [31m^[39m
+    [90m 29| [39m
+    [90m 30| [39m  
+[90m// Get habit logs 
+from the last 30 days[39m
+[90m [2mΓ¥»[22m server/t
+riggerDetection.test.ts:[2
+m10:22[22m[39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[14/43
+]ΓÄ»[22m[39m
+
+[31m[1m[7m FAIL 
+[27m[22m[39m server/trig
+gerDetection.test.ts[2m > 
+[22mTrigger Detection 
+System[2m > [22mshould 
+generate fallback 
+strategies if LLM fails
+[31m[1mAssertionError[22
+m: expected 'Take 5 deep 
+breaths (4-7-8 
+technique:ΓÇª' to contain 
+'breathe'[39m
+
+Expected: 
+[32m"breathe"[39m
+Received: [31m"Take 5 
+deep breaths (4-7-8 
+technique: inhale 4s, hold 
+7s, exhale 8s)"[39m
+
+[36m [2mΓ¥»[22m 
+it.timeout server/triggerDe
+tection.test.ts:[2m86:36[
+22m[39m
+    [90m 84| [39m
+    [90m 85| [39m    [34
+mexpect[39m(strategies[33
+m.[39mlength)[33m.[39m[
+34mtoBeGreaterThanOrEqual[
+39m([34m1[39m)[33m;[39m
+    [90m 86| [39m    [34
+mexpect[39m(strategies[[3
+4m0[39m][33m.[39mstrateg
+y)[33m.[39m[34mtoContain
+[39m([32m"breathe"[39m)
+[33m;[39m
+    [90m   | [39m        
+                           
+[31m^[39m
+    [90m 87| [39m  
+}[33m,[39m { 
+timeout[33m:[39m 
+[34m30000[39m 
+})[33m;[39m
+    [90m 88| [39m
+
+[31m[2mΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[15/43
+]ΓÄ»[22m[39m
+
+[2m Test Files [22m [1m[31m6 failed[39m[22m[2m | [22m[1m[32m1 passed[39m[22m[90m (7)[39m
+[2m      Tests [22m [1m[31m43 failed[39m[22m[2m | [22m[1m[32m16 passed[39m[22m[90m (59)[39m
+[2m   Start at [22m 00:46:10
+[2m   Duration [22m 3.36s[2m (transform 1.04s, setup 0ms, collect 15.09s, tests 231ms, environment 3ms, prepare 3.72s)[22m
+
