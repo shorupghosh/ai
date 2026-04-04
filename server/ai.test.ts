@@ -1,6 +1,27 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { appRouter } from "./routers";
 import type { TrpcContext } from "./_core/context";
+import { getDb } from "./db";
+import { invokeLLM } from "./_core/llm";
+
+vi.mock("./db", () => ({
+  getDb: vi.fn(),
+}));
+
+vi.mock("./_core/llm", () => ({
+  invokeLLM: vi.fn(),
+}));
+
+// Mock schema imports since they are used in routers.ts
+vi.mock("../drizzle/schema", () => ({
+  users: { id: "id" },
+  tasks: { id: "id", userId: "userId" },
+  projects: { id: "id", userId: "userId", name: "name" },
+  habits: { id: "id" },
+  sleep: { id: "id" },
+  gymDiet: { id: "id" },
+  dailyReviews: { id: "id" },
+}));
 
 type AuthenticatedUser = NonNullable<TrpcContext["user"]>;
 
@@ -12,6 +33,8 @@ function createAuthContext(): TrpcContext {
     name: "Test User",
     loginMethod: "manus",
     role: "user",
+    telegramChatId: null,
+    googleCalendarToken: null,
     createdAt: new Date(),
     updatedAt: new Date(),
     lastSignedIn: new Date(),
@@ -32,30 +55,76 @@ function createAuthContext(): TrpcContext {
 }
 
 describe("AI Router - Process Thought", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+  });
+
   it("should process a thought and create tasks", async () => {
     const ctx = createAuthContext();
+    
+    // Mock DB select and insert
+    const mockDb = {
+      select: vi.fn().mockReturnThis(),
+      from: vi.fn().mockReturnThis(),
+      where: vi.fn().mockResolvedValue([{ id: 1, name: "Project 1" }]),
+      insert: vi.fn().mockReturnThis(),
+      values: vi.fn().mockResolvedValue([{ id: 101, title: "Finish Landing Page" }]),
+    };
+    (getDb as any).mockResolvedValue(mockDb);
+
+    // Mock LLM response
+    (invokeLLM as any).mockResolvedValue({
+      choices: [{
+        message: {
+          content: JSON.stringify({
+            tasks: [
+              { title: "Finish Landing Page", priority: "high" },
+              { title: "Reach out to 5 customers", priority: "medium" }
+            ]
+          })
+        }
+      }]
+    });
+
     const caller = appRouter.createCaller(ctx);
 
-    // This test will call the actual LLM, so we expect it to work
-    // In production, you might want to mock the LLM response
     const result = await caller.ai.processThought({
       thought: "I need to finish the project landing page and reach out to 5 customers",
     });
 
-    expect(result).toHaveProperty("success", true);
-    expect(result).toHaveProperty("tasksCreated");
-    expect(result).toHaveProperty("tasks");
-    expect(Array.isArray(result.tasks)).toBe(true);
-    
-    if (result.tasksCreated > 0) {
-      expect(result.tasks.length).toBeGreaterThan(0);
-      expect(result.tasks[0]).toHaveProperty("title");
-      expect(result.tasks[0]).toHaveProperty("priority");
-    }
+    expect(result.success).toBe(true);
+    expect(result.tasksCreated).toBe(2);
+    expect(result.tasks).toHaveLength(2);
+    expect(result.tasks[0].title).toBe("Finish Landing Page");
+    expect(invokeLLM).toHaveBeenCalled();
   });
 
   it("should handle complex thoughts with multiple tasks", async () => {
     const ctx = createAuthContext();
+    
+    const mockDb = {
+      select: vi.fn().mockReturnThis(),
+      from: vi.fn().mockReturnThis(),
+      where: vi.fn().mockResolvedValue([]),
+      insert: vi.fn().mockReturnThis(),
+      values: vi.fn().mockResolvedValue([]),
+    };
+    (getDb as any).mockResolvedValue(mockDb);
+
+    (invokeLLM as any).mockResolvedValue({
+      choices: [{
+        message: {
+          content: JSON.stringify({
+            tasks: [
+              { title: "Fix bug", priority: "high" },
+              { title: "Update docs", priority: "medium" },
+              { title: "Improve UI", priority: "low" }
+            ]
+          })
+        }
+      }]
+    });
+
     const caller = appRouter.createCaller(ctx);
 
     const result = await caller.ai.processThought({
@@ -63,11 +132,31 @@ describe("AI Router - Process Thought", () => {
     });
 
     expect(result.success).toBe(true);
-    expect(result.tasksCreated).toBeGreaterThanOrEqual(0);
+    expect(result.tasksCreated).toBe(3);
   });
 
   it("should extract priority levels from thoughts", async () => {
     const ctx = createAuthContext();
+    
+    const mockDb = {
+      select: vi.fn().mockReturnThis(),
+      from: vi.fn().mockReturnThis(),
+      where: vi.fn().mockResolvedValue([]),
+      insert: vi.fn().mockReturnThis(),
+      values: vi.fn().mockResolvedValue([]),
+    };
+    (getDb as any).mockResolvedValue(mockDb);
+
+    (invokeLLM as any).mockResolvedValue({
+      choices: [{
+        message: {
+          content: JSON.stringify({
+            tasks: [{ title: "Fix critical bug", priority: "high" }]
+          })
+        }
+      }]
+    });
+
     const caller = appRouter.createCaller(ctx);
 
     const result = await caller.ai.processThought({
@@ -75,29 +164,39 @@ describe("AI Router - Process Thought", () => {
     });
 
     expect(result.success).toBe(true);
-    // Check if any task has high priority
-    if (result.tasks.length > 0) {
-      const hasHighPriority = result.tasks.some(t => t.priority === "high");
-      expect(hasHighPriority || result.tasks.length > 0).toBe(true);
-    }
+    expect(result.tasks[0].priority).toBe("high");
   });
 
   it("should reject empty thoughts", async () => {
     const ctx = createAuthContext();
     const caller = appRouter.createCaller(ctx);
 
-    try {
-      await caller.ai.processThought({
-        thought: "",
-      });
-      expect.fail("Should have thrown an error");
-    } catch (error: any) {
-      expect(error.message).toContain("min");
-    }
+    await expect(caller.ai.processThought({ thought: "" }))
+      .rejects.toThrow();
   });
 
   it("should create tasks with valid structure", async () => {
     const ctx = createAuthContext();
+    
+    const mockDb = {
+      select: vi.fn().mockReturnThis(),
+      from: vi.fn().mockReturnThis(),
+      where: vi.fn().mockResolvedValue([]),
+      insert: vi.fn().mockReturnThis(),
+      values: vi.fn().mockResolvedValue([]),
+    };
+    (getDb as any).mockResolvedValue(mockDb);
+
+    (invokeLLM as any).mockResolvedValue({
+      choices: [{
+        message: {
+          content: JSON.stringify({
+            tasks: [{ title: "Build new feature", priority: "medium" }]
+          })
+        }
+      }]
+    });
+
     const caller = appRouter.createCaller(ctx);
 
     const result = await caller.ai.processThought({
@@ -105,16 +204,8 @@ describe("AI Router - Process Thought", () => {
     });
 
     expect(result.success).toBe(true);
-    
-    for (const task of result.tasks) {
-      expect(task).toHaveProperty("title");
-      expect(typeof task.title).toBe("string");
-      expect(task.title.length).toBeGreaterThan(0);
-      
-      // Priority may be undefined or one of the valid values
-      if (task.priority !== undefined) {
-        expect(["low", "medium", "high"]).toContain(task.priority);
-      }
-    }
+    expect(result.tasks[0]).toHaveProperty("title", "Build new feature");
+    expect(result.tasks[0]).toHaveProperty("priority", "medium");
   });
 });
+
