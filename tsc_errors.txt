@@ -1,0 +1,19 @@
+﻿client/src/pages/GoalsPage.tsx(161,56): error TS2352: Conversion of type 'number' to type 'string' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+client/src/pages/GoalsPage.tsx(176,81): error TS2352: Conversion of type 'number' to type 'string' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+client/src/pages/HabitsPage.tsx(65,40): error TS2367: This comparison appears to be unintentional because the types '"cigarettes" | "joints" | "alcohol" | "stimulants" | "porn"' and '"stimulant_use"' have no overlap.
+client/src/pages/NotificationsPage.tsx(181,45): error TS2367: This comparison appears to be unintentional because the types '"habit_trigger" | "system_alert" | "reminder"' and '"task_reminder"' have no overlap.
+client/src/pages/NotificationsPage.tsx(193,45): error TS2367: This comparison appears to be unintentional because the types '"habit_trigger" | "system_alert" | "reminder"' and '"achievement"' have no overlap.
+client/src/pages/TasksPage.tsx(85,30): error TS18048: 'finalProjectId' is possibly 'undefined'.
+server/routers.ts(159,11): error TS2322: Type 'string' is not assignable to type 'number'.
+server/routers.ts(162,15): error TS2461: Type 'RunResult' is not an array type.
+server/routers.ts(223,11): error TS2322: Type '"cigarettes" | "joints" | "stimulant_use"' is not assignable to type '"cigarettes" | "joints" | "alcohol" | "stimulants" | "porn"'.
+  Type '"stimulant_use"' is not assignable to type '"cigarettes" | "joints" | "alcohol" | "stimulants" | "porn"'. Did you mean '"stimulants"'?
+server/routers.ts(270,11): error TS2322: Type 'string' is not assignable to type 'number'.
+server/routers.ts(314,11): error TS2322: Type 'string | undefined' is not assignable to type 'number | null | undefined'.
+  Type 'string' is not assignable to type 'number'.
+server/routers.ts(450,49): error TS2367: This comparison appears to be unintentional because the types '"cigarettes" | "joints" | "alcohol" | "stimulants" | "porn"' and '"stimulant_use"' have no overlap.
+server/routers_new.ts(37,9): error TS2322: Type '"personal" | "health" | "career" | "financial" | "learning" | "fitness"' is not assignable to type '"personal" | "professional" | "health" | "finance" | undefined'.
+  Type '"career"' is not assignable to type '"personal" | "professional" | "health" | "finance" | undefined'.
+server/routers_new.ts(203,9): error TS2322: Type '"custom" | "pomodoro" | "deep_work"' is not assignable to type '"pomodoro" | "deep_work" | "shallow_work" | undefined'.
+  Type '"custom"' is not assignable to type '"pomodoro" | "deep_work" | "shallow_work" | undefined'.
+server/routers_new.ts(233,44): error TS2322: Type '"cancelled"' is not assignable to type 'SQL<unknown> | "completed" | "active" | "interrupted" | SQLiteColumn<ColumnBaseConfig<ColumnDataType, string>, {}, {}> | undefined'.

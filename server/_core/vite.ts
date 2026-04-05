@@ -23,6 +23,7 @@ export async function setupVite(app: Express, server: Server) {
   app.use(vite.middlewares);
   app.use("*", async (req, res, next) => {
     const url = req.originalUrl;
+    console.log("[Vite] Fallback route hit for:", url);
 
     try {
       const clientTemplate = path.resolve(
@@ -39,8 +40,10 @@ export async function setupVite(app: Express, server: Server) {
         `src="/src/main.tsx?v=${nanoid()}"`
       );
       const page = await vite.transformIndexHtml(url, template);
+      console.log("[Vite] Successfully transformed index.html");
       res.status(200).set({ "Content-Type": "text/html" }).end(page);
     } catch (e) {
+      console.error("[Vite] Error in fallback route:", e);
       vite.ssrFixStacktrace(e as Error);
       next(e);
     }

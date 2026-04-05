@@ -12,15 +12,13 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const CATEGORY_COLORS: Record<string, string> = {
   health: "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300",
-  career: "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300",
+  professional: "bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300",
   personal: "bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-300",
-  financial: "bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-300",
-  learning: "bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-300",
-  fitness: "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300",
+  finance: "bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-300",
 };
 
 const CATEGORY_ICONS: Record<string, string> = {
-  health: "💚", career: "💼", personal: "⭐", financial: "💰", learning: "📚", fitness: "🏋️",
+  health: "💚", professional: "💼", personal: "⭐", finance: "💰",
 };
 
 function ProgressRing({ progress, size = 80, strokeWidth = 6 }: { progress: number; size?: number; strokeWidth?: number }) {
@@ -76,7 +74,7 @@ export default function GoalsPage() {
     try {
       await updateMutation.mutateAsync({
         id,
-        progressPercent: newProgress.toFixed(2),
+        progressPercent: newProgress,
         status: newProgress >= 100 ? "completed" : "active",
       });
       refetch();
@@ -158,7 +156,7 @@ export default function GoalsPage() {
               <Card className="group hover:shadow-xl transition-all duration-300 border-l-4" style={{ borderLeftColor: category === "health" ? "#10b981" : "#8b5cf6" }}>
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-4">
-                    <ProgressRing progress={parseFloat(goal.progressPercent as string)} />
+                    <ProgressRing progress={goal.progressPercent} />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1">
                         <Badge className={CATEGORY_COLORS[goal.category] || CATEGORY_COLORS.personal}>
@@ -173,7 +171,7 @@ export default function GoalsPage() {
                       <h3 className="font-bold text-lg leading-tight">{goal.title}</h3>
                       {goal.description && <p className="text-sm text-muted-foreground mt-1 line-clamp-2">{goal.description}</p>}
                       <div className="mt-3 flex items-center gap-2">
-                        <input type="range" min="0" max="100" value={parseFloat(goal.progressPercent as string)} onChange={e => handleProgressUpdate(goal.id, parseInt(e.target.value))} className="flex-1 accent-purple-600 h-2" />
+                        <input type="range" min="0" max="100" value={goal.progressPercent} onChange={e => handleProgressUpdate(goal.id, parseInt(e.target.value))} className="flex-1 accent-purple-600 h-2" />
                         <button onClick={() => deleteMutation.mutateAsync({ id: goal.id }).then(() => { refetch(); toast.success("Goal deleted"); })} className="text-muted-foreground hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100">
                           <Trash2 className="w-4 h-4" />
                         </button>

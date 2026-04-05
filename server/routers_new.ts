@@ -23,7 +23,7 @@ export const goalsRouter = router({
     .input(z.object({
       title: z.string().min(1),
       description: z.string().optional(),
-      category: z.enum(["health", "career", "personal", "financial", "learning", "fitness"]).optional(),
+      category: z.enum(["personal", "professional", "health", "finance"]).optional(),
       targetDate: z.date().optional(),
       milestones: z.string().optional(),
     }))
@@ -47,10 +47,10 @@ export const goalsRouter = router({
       id: z.number(),
       title: z.string().optional(),
       description: z.string().optional(),
-      category: z.enum(["health", "career", "personal", "financial", "learning", "fitness"]).optional(),
+      category: z.enum(["personal", "professional", "health", "finance"]).optional(),
       targetDate: z.date().optional(),
-      status: z.enum(["active", "completed", "paused", "abandoned"]).optional(),
-      progressPercent: z.string().optional(),
+      status: z.enum(["active", "completed", "paused", "archived"]).optional(),
+      progressPercent: z.number().optional(),
       milestones: z.string().optional(),
     }))
     .mutation(async ({ ctx, input }) => {
@@ -191,7 +191,7 @@ export const focusRouter = router({
     .input(z.object({
       taskId: z.number().optional(),
       duration: z.number().min(1).max(180).default(25),
-      type: z.enum(["pomodoro", "deep_work", "custom"]).default("pomodoro"),
+      type: z.enum(["pomodoro", "deep_work", "shallow_work"]).default("pomodoro"),
     }))
     .mutation(async ({ ctx, input }) => {
       const db = await getDb();
@@ -230,7 +230,7 @@ export const focusRouter = router({
     .mutation(async ({ ctx, input }) => {
       const db = await getDb();
       if (!db) throw new Error("Database not available");
-      await db.update(focusSessions).set({ status: "cancelled" }).where(and(eq(focusSessions.id, input.id), eq(focusSessions.userId, ctx.user.id)));
+      await db.update(focusSessions).set({ status: "interrupted" }).where(and(eq(focusSessions.id, input.id), eq(focusSessions.userId, ctx.user.id)));
       return { success: true };
     }),
 

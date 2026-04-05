@@ -22,7 +22,7 @@ export default function GymDietPage() {
     try {
       await logMutation.mutateAsync({
         workoutDone,
-        weight: weight || undefined,
+        weight: weight ? parseFloat(weight) : undefined,
         meals: meals || undefined,
         proteinIntake: proteinIntake ? parseInt(proteinIntake) : undefined,
         waterIntake: waterIntake ? parseInt(waterIntake) : undefined,

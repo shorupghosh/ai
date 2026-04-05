@@ -178,7 +178,7 @@ export default function NotificationsPage() {
           </CardHeader>
           <CardContent>
             <p className="text-3xl font-bold text-blue-600">
-              {notifications?.filter((n) => n.type === "task_reminder").length || 0}
+              {notifications?.filter((n) => n.type === "reminder").length || 0}
             </p>
             <p className="text-xs text-muted-foreground mt-1">This week</p>
           </CardContent>
@@ -190,7 +190,7 @@ export default function NotificationsPage() {
           </CardHeader>
           <CardContent>
             <p className="text-3xl font-bold text-green-600">
-              {notifications?.filter((n) => n.type === "achievement").length || 0}
+              {notifications?.filter((n) => n.type === "system_alert").length || 0}
             </p>
             <p className="text-xs text-muted-foreground mt-1">This week</p>
           </CardContent>

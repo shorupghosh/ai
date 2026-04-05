@@ -11,7 +11,7 @@ export default function HabitsPage() {
   const logMutation = trpc.habits.log.useMutation();
   const deleteMutation = trpc.habits.delete.useMutation();
   
-  const [habitType, setHabitType] = useState<"cigarettes" | "joints" | "stimulant_use">("cigarettes");
+  const [habitType, setHabitType] = useState<"cigarettes" | "joints" | "alcohol" | "stimulants" | "porn">("cigarettes");
   const [count, setCount] = useState("1");
   const [urgeLevel, setUrgeLevel] = useState("5");
   const [triggerNotes, setTriggerNotes] = useState("");
@@ -56,13 +56,17 @@ export default function HabitsPage() {
   const habitLabels: Record<string, string> = {
     cigarettes: "🚬 Cigarettes",
     joints: "🚬 Joints",
-    stimulant_use: "⚡ Stimulant Use",
+    alcohol: "🍺 Alcohol",
+    stimulants: "⚡ Stimulants",
+    porn: "🚫 Porn",
   };
 
   const habitCounts = {
     cigarettes: habits?.filter(h => h.habitType === "cigarettes").length || 0,
     joints: habits?.filter(h => h.habitType === "joints").length || 0,
-    stimulant_use: habits?.filter(h => h.habitType === "stimulant_use").length || 0,
+    alcohol: habits?.filter(h => h.habitType === "alcohol").length || 0,
+    stimulants: habits?.filter(h => h.habitType === "stimulants").length || 0,
+    porn: habits?.filter(h => h.habitType === "porn").length || 0,
   };
 
   return (
@@ -88,7 +92,7 @@ export default function HabitsPage() {
         <Card>
           <CardContent className="pt-6">
             <p className="text-sm text-muted-foreground">Stimulants Logged</p>
-            <p className="text-2xl font-bold">{habitCounts.stimulant_use}</p>
+            <p className="text-2xl font-bold">{habitCounts.stimulants}</p>
           </CardContent>
         </Card>
       </div>
@@ -105,7 +109,9 @@ export default function HabitsPage() {
           >
             <option value="cigarettes">Cigarettes</option>
             <option value="joints">Joints</option>
-            <option value="stimulant_use">Stimulant Use</option>
+            <option value="alcohol">Alcohol</option>
+            <option value="stimulants">Stimulants</option>
+            <option value="porn">Porn</option>
           </select>
 
           <div className="grid grid-cols-2 gap-2">

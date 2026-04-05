@@ -24,24 +24,24 @@ import SettingsPage from "./pages/SettingsPage";
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={DashboardPage} />
-      <Route path={"/tasks"} component={TasksPage} />
-      <Route path={"/projects"} component={ProjectsPage} />
-      <Route path={"/habits"} component={HabitsPage} />
-      <Route path={"/sleep"} component={SleepPage} />
-      <Route path={"/gym-diet"} component={GymDietPage} />
-      <Route path={"/daily-review"} component={DailyReviewPage} />
-      <Route path={"/ai-thought"} component={AIThoughtPage} />
-      <Route path={"/weekly-insights"} component={WeeklyInsightsPage} />
-      <Route path={"/daily-plan"} component={DailyPlanPage} />
-      <Route path={"/notifications"} component={NotificationsPage} />
-      <Route path={"/goals"} component={GoalsPage} />
-      <Route path={"/focus"} component={FocusPage} />
-      <Route path={"/journal"} component={JournalPage} />
-      <Route path={"/settings"} component={SettingsPage} />
-      <Route path={"/404"} component={NotFound} />
-      <Route component={NotFound} />
-    </Switch>
+        <Route path={"/"} component={DashboardPage} />
+        <Route path={"/tasks"} component={TasksPage} />
+        <Route path={"/projects"} component={ProjectsPage} />
+        <Route path={"/habits"} component={HabitsPage} />
+        <Route path={"/sleep"} component={SleepPage} />
+        <Route path={"/gym-diet"} component={GymDietPage} />
+        <Route path={"/daily-review"} component={DailyReviewPage} />
+        <Route path={"/ai-thought"} component={AIThoughtPage} />
+        <Route path={"/weekly-insights"} component={WeeklyInsightsPage} />
+        <Route path={"/daily-plan"} component={DailyPlanPage} />
+        <Route path={"/notifications"} component={NotificationsPage} />
+        <Route path={"/goals"} component={GoalsPage} />
+        <Route path={"/focus"} component={FocusPage} />
+        <Route path={"/journal"} component={JournalPage} />
+        <Route path={"/settings"} component={SettingsPage} />
+        <Route path={"/404"} component={NotFound} />
+        <Route component={NotFound} />
+      </Switch>
   );
 }
 

@@ -156,11 +156,11 @@ export const appRouter = router({
           userId: ctx.user.id,
           name: input.name,
           stage: input.stage || "idea",
-          progressPercent: "0.00",
+          progressPercent: 0,
         };
 
-        await db.insert(projects).values(insertData);
-        return { success: true };
+        const result = await db.insert(projects).values(insertData).returning({ id: projects.id });
+        return { success: true, id: result[0].id };
       }),
 
     update: protectedProcedure
@@ -168,7 +168,7 @@ export const appRouter = router({
         id: z.number(),
         name: z.string().optional(),
         stage: z.enum(["idea", "build", "test", "launch", "growth"]).optional(),
-        progressPercent: z.string().optional(),
+        progressPercent: z.number().optional(),
         nextAction: z.string().optional(),
         blocker: z.string().optional(),
       }))
@@ -208,7 +208,7 @@ export const appRouter = router({
 
     log: protectedProcedure
       .input(z.object({
-        habitType: z.enum(["cigarettes", "joints", "stimulant_use"]),
+        habitType: z.enum(["cigarettes", "joints", "alcohol", "stimulants", "porn"]),
         count: z.number().default(1),
         urgeLevel: z.number().min(1).max(10).optional(),
         triggerNotes: z.string().optional(),
@@ -267,7 +267,7 @@ export const appRouter = router({
           userId: ctx.user.id,
           sleepTime: input.sleepTime,
           wakeTime: input.wakeTime,
-          totalHours: sleepHours.toString(),
+          totalHours: sleepHours,
           quality: input.quality,
           date: input.date,
         };
@@ -298,7 +298,7 @@ export const appRouter = router({
     log: protectedProcedure
       .input(z.object({
         workoutDone: z.boolean().default(false),
-        weight: z.string().optional(),
+        weight: z.number().optional(),
         meals: z.string().optional(),
         proteinIntake: z.number().optional(),
         waterIntake: z.number().optional(),
@@ -447,7 +447,7 @@ export const appRouter = router({
         const habitCounts: Record<string, number> = {
           cigarettes: weekHabits.filter(h => h.habitType === "cigarettes").length,
           joints: weekHabits.filter(h => h.habitType === "joints").length,
-          stimulant_use: weekHabits.filter(h => h.habitType === "stimulant_use").length,
+          stimulants: weekHabits.filter(h => h.habitType === "stimulants").length,
         };
 
         const avgUrgeLevel = weekHabits.length > 0
@@ -562,7 +562,14 @@ Extract tasks from the thought and return a JSON array. Each task should have: t
         const content = response.choices[0]?.message?.content;
         if (!content || typeof content !== 'string') throw new Error("No response from LLM");
 
-        const parsed = JSON.parse(typeof content === 'string' ? content : '');
+        let contentString = content.trim();
+        if (contentString.startsWith('```json')) {
+          contentString = contentString.replace(/^```json\n?/, '').replace(/\n?```$/, '').trim();
+        } else if (contentString.startsWith('```')) {
+          contentString = contentString.replace(/^```\n?/, '').replace(/\n?```$/, '').trim();
+        }
+
+        const parsed = JSON.parse(contentString);
         const createdTasks = [];
 
         for (const task of parsed.tasks || []) {
@@ -711,7 +718,14 @@ Return as JSON with: tasks (array with title, startTime, duration, priority), br
         const content = response.choices[0]?.message?.content;
         if (!content || typeof content !== 'string') throw new Error("No response from LLM");
 
-        const plan = JSON.parse(typeof content === 'string' ? content : '');
+        let contentString = content.trim();
+        if (contentString.startsWith('```json')) {
+          contentString = contentString.replace(/^```json\n?/, '').replace(/\n?```$/, '').trim();
+        } else if (contentString.startsWith('```')) {
+          contentString = contentString.replace(/^```\n?/, '').replace(/\n?```$/, '').trim();
+        }
+
+        const plan = JSON.parse(contentString);
 
         return {
           success: true,
